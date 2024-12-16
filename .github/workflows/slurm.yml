@@ -5,10 +5,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Setup Slurm
-        uses: multimeric/setup-slurm-action@v1.0.0
+        uses: multimeric/setup-slurm-action@v1.0.1
         with:
-            nodes: |
-                [
-                    { name: one, State: UNKNOWN, Sockets: 1, CoresPerSocket: 2, RealMemory: 1000 },
-                    { name: two, State: UNKNOWN, Sockets: 1, CoresPerSocket: 2, RealMemory: 1000 },
-                ]
+            memory: 3000
+
+      - run: sinfo --Node
