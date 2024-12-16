@@ -17,4 +17,4 @@ jobs:
         with:
             memory: 3000
 
-      - run: sinfo --Node
+      - run: sinfo --Node --long
