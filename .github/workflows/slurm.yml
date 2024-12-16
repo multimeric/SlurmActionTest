@@ -4,11 +4,8 @@ jobs:
   setup-slurm:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
-
       - name: Setup Slurm
-        uses: multimeric/setup-slurm-action@v1
+        uses: multimeric/setup-slurm-action@v1.0.0
         with:
             nodes: |
                 [
