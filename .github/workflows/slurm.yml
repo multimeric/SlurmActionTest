@@ -9,6 +9,6 @@ jobs:
         with:
             nodes: |
                 [
-                    { name: localhost, State: UNKNOWN, Sockets: 1, CoresPerSocket: 2, RealMemory: 1000 },
-                    { name: localhost, State: UNKNOWN, Sockets: 1, CoresPerSocket: 2, RealMemory: 1000 },
+                    { name: one, State: UNKNOWN, Sockets: 1, CoresPerSocket: 2, RealMemory: 1000 },
+                    { name: two, State: UNKNOWN, Sockets: 1, CoresPerSocket: 2, RealMemory: 1000 },
                 ]
