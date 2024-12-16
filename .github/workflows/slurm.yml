@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Setup Slurm
-        uses: multimeric/setup-slurm-action@v1.0.1
+        uses: multimeric/setup-slurm-action@v1.0.2
         with:
             memory: 3000
 
